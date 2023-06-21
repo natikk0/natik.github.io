@@ -1,0 +1,421 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,600;1,400;1,500;1,700;1,900&family=Frank+Ruhl+Libre:wght@400;800&family=Inter:wght@400;700&family=Righteous&family=Urbanist:ital,wght@0,200;1,300;1,500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    color: #FFFFFF;
+    background-color: #14110E;
+    font: 500 16 px/28px 'Roboto', Arial, sans-serif, Helvetica;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+    transition: .4s;
+}
+
+ul li,
+ol li{
+    list-style-type:none;
+
+}
+img{
+    max-width: 100%;
+    max-height: 100%;
+}
+button{
+    display: block;
+    border: none;
+    color: inherit;
+    font: inherit;
+    background-color: transparent;
+    transition: .4s;
+    cursor: pointer;
+}
+.btn-primary {
+    padding: 20px 36px;
+    font: 700 18px 'Inter', Arial, Helvetica, sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #C99E71;
+}
+
+.btn-primary:hover {
+    background-color: #6c3e0d;
+}
+.container {
+    max-width: 1340px;
+    padding: 0 75px;
+    margin: 0 auto;
+
+}
+.container-header{
+    padding: 0 10px;
+}
+
+.section-main {
+    padding-bottom: 140px;
+}
+.section-title {
+    margin-bottom: 12px;
+    color: #C99E71;
+    font: 600 18px/22px 'Bodoni Moda', Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+.section-subtitle {
+    margin-bottom: 56px;
+    font: 48px/62px 'Righteous', cursive;
+    text-align: center;
+}
+.section__text {
+    opacity: 0.8;
+}
+
+input {
+    display: block;
+    padding: 16px 20px;
+    border: none;
+    outline: none;
+    color: inherit;
+    font: 600 18px/32px 'Righteous', Arial, Helvetica, sans-serif;
+    opacity: 0.8;
+    background-color: #14110E;
+}
+
+/* Заголовок */
+#header-section {
+    padding: 20px;
+    background-color: #292016;
+ }
+ 
+ .header,
+ .nav-main,
+ .nav-main__list,
+ .header-action {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+ }
+ .nav-main {
+    flex-grow: 1;
+}
+.nav-main__list {
+    gap: 47px;
+    font: 600 'Bodoni Moda';
+}
+.nav-main__link_selected {
+    color: #C99E70;
+    font-weight: 750;
+    cursor: default;
+}
+.nav-main__link:hover,
+.header-action__search:hover,
+.header-action__cart:hover {
+    color: #8b4b07;
+}
+.header__logo,
+.footer__img {
+    width: 72px;
+    height: 60px;
+}
+.header-action {
+    gap: 40px;
+    margin-left: 48px;
+} 
+.header-action__search,
+.header-action__cart {
+    font-size: 30px;
+}
+
+/* Домашняя страничка */
+
+#banner-section {
+    background: url(assets/img/banner1.jpg) 45% 0%/cover no-repeat;
+}
+.banner {
+    display: flex;
+    justify-content: space-between;
+    padding: 147px 0 158px;
+}
+.banner-info {
+    max-width: 530px;
+}
+.banner__header {
+    font: 65px/70px 'Righteous', bold;
+}
+.banner__text {
+    margin: 32px 0 64px;
+    font-size: 20px;
+    line-height: 36px;
+    opacity: 0.8;
+    text-transform:initial;
+    font: cursive;
+}
+.banner__btn {
+    padding: 24px 40px;
+}
+
+/* Каталог */
+.features {
+    display: flex;
+    justify-content: space-between;
+    gap: 36px;
+    padding-top: 140px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+
+}
+.features__item {
+    font: 24px/30px 'Righteous', cursive;
+}
+.features__item_dark {
+    margin-right: 12px;
+    color: rgb(226, 226, 103);
+}
+.features__img {
+    display: block;
+    margin-top: 24px;
+}
+.features__price {
+    display: block;
+    font-size: 15px;
+    font-weight: 600;
+    text-align: center;
+    color: rgb(226, 226, 103);
+}
+ 
+/* Кофемашина */
+.discover-wrap {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    padding: 85px 80px;
+    background-color: #1C1814;
+}
+.discover-img {
+    display: block;
+    margin: 0 auto;
+    max-height: 359px;
+}
+.discover {
+    max-width: 535px;
+}
+.discover__title {
+    margin-bottom: 36px;
+    text-align: left;
+}
+.discover__link {
+    display: block;
+    width: 215px;
+    margin-top: 36px;
+}
+
+/* Менюшка */
+.menu-wrap {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 36px;
+}
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 48%;
+    padding: 24px;
+    border: 1px solid  #f6c99c;
+}
+.menu__img {
+    width: 72px;
+    height: 72px;
+}
+.menu__title {
+    font: 24px/30px 'Righteous', cursive;
+    
+}
+.menu__price {
+    display: block;
+    margin-left: auto;
+    color: rgb(226, 226, 103);;
+    font-size: 18px;
+}
+
+/* Отзывы */
+.testimonial-wrap {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    margin-bottom: 36px;
+}
+.testimonial {
+    padding: 40px;
+    background-color: #1C1814;
+}
+.testimonial-data,
+.testimonial-info {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+}
+.testimonial__img {
+    display: block;
+    width: 129px;
+    height: 149px;
+}
+.testimonial-info {
+    margin-top: 28px;
+}
+.testimonial__name {
+    display: block;
+    margin-bottom: 4px;
+    font-size: 18px;
+    line-height: 22px;
+}
+.testimonial__position {
+    font-size: 14px;
+    line-height: 25px;
+    opacity: 0.5;
+}
+
+
+/* Бронирование */
+.reservation-wrap {
+    display: flex;
+    justify-content: space-between;
+}
+.reservation-map {
+    width: 50%;
+    background: url(assets/img/mapp1.jpg) 50% 0%/cover no-repeat;
+}
+.reservation {
+    width: 50%;
+    padding: 72px 48px;
+    background-color: rgb(226, 226, 103);
+}
+.reservation__input {
+    width: 100%;
+    margin-bottom: 24px;
+}
+.reservation__btn {
+    width: 205px;
+    margin: 56px auto 0;
+}
+
+/* Обратная связь + менюшка*/
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    row-gap: 5px;
+}
+.footer__img {
+    margin-right: 36px;
+}
+.footer__list {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    font-size: 20px;
+}
+.footer-form {
+    position: relative;
+    width: 328px;
+    margin-left: auto;
+}
+.footer__input {
+    width: 100%;
+    padding: 22px 70px 22px 28px;
+    background-color: #1C1814;
+}
+.footer-form__btn {
+    position: absolute;
+    top: 50%;
+    right: 12px;
+    width: 48px;
+    height: 48px;
+    background-color: #C99E71;
+    transform: translateY(-50%);
+}
+.footer-form__btn:hover {
+    background-color: #C99E71;
+}
+.footer-copyright {
+    margin-top: 72px;
+    padding: 32px 0;
+    text-align: center;
+    background-color: #1C1814;
+}
+.element-animation{
+    margin: 2rem 0;
+    font-size: 2rem;
+    opacity: 0;
+}
+.element-animation.element-show{
+    opacity: 1;
+    transition: opacity 1s;
+}
+.section__text.element-animation{
+    opacity: 0;
+     -webkit-transform: translateY(-50px);
+    -ms-transform: translateY(-50px);
+     transform: translateY(-50px);
+    -webkit-transition: all 2s;
+    -o-transition: all 2s;
+    transition: all 2s;
+ }
+.section__text.element-animation.element-show{
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+ }
+.features__img.element-animation{
+    opacity: 0;
+     -webkit-transform: translateX(-100px);
+    -ms-transform: translateX(-100px);
+     transform: translateX(-100px);
+    -webkit-transition: all 2s;
+    -o-transition: all 2s;
+    transition: all 2s;
+ }
+.features__img.element-animation.element-show{
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+ }
+.discover-img.element-animation{
+    opacity: 0;
+     -webkit-transform: translateX(-120px);
+    -ms-transform: translateX(-120px);
+     transform: translateX(-120px);
+    -webkit-transition: all 2s;
+    -o-transition: all 2s;
+    transition: all 2s;
+ }
+.discover-img.element-animation.element-show{
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+ }
+
+ .menu__img.element-animation{
+    opacity: 0;
+     -webkit-transform: translateX(-15px);
+    -ms-transform: translateX(-15px);
+     transform: translateX(-15px);
+    -webkit-transition: all 2s;
+    -o-transition: all 2s;
+    transition: all 2s;
+ }
+.menu__img.element-animation.element-show{
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+ }
+
+
